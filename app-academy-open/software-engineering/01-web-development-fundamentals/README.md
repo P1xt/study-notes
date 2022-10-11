@@ -23,8 +23,11 @@
 - **function definition** consists of the function keyword, followed by three things: The name of the function. A list of parameters to the function, enclosed in parentheses ( ). The code to be run when this function is run, enclosed in curly braces { }.
 - **Parameters** are comma separated variables specified as part of a function's declaration
 - **Arguments** are values passed to the function when it is invoked.
-- **control** flow is the order in which instructions are executed within a program.
+- **control flow** is the order in which instructions are executed within a program.
 - **DRY** - don't repeat yourself!
+- **while loop** will execute a block of code as long as a specified condition is true
+- **for loop** can be broken down into three sections: The initial expression which will be run once at the beginning of the loop.The condition which is checked every time the loop is run. If this condition is true the loop will run again. If this condition is false the loop will end.The loopEnd expression which will be run at the end of the loop before checking the condition again.
+
 
 
 ## Tips on asking a great question
