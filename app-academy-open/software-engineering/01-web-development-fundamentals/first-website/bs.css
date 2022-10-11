@@ -1,0 +1,165 @@
+:root {
+  --primary: #6c7f76;
+  --primary-hovered: #123b27;
+  --secondary: #3c4c74;
+}
+
+body {
+  background: var(--primary);
+}
+
+.bs {
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 30px;
+}
+.bs__nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.bs__nav-list-item {
+  list-style-type: none;
+}
+
+.bs__nav-link {
+  color: #ffffff;
+  background: var(--primary);
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.bs__nav-link:hover,
+.bs__nav-link--active {
+  background: var(--primary-hovered);
+}
+
+.bs__main {
+  text-align: center;
+}
+
+.bs__main-header,
+.bs__section-header {
+  color: var(--secondary);
+}
+
+.bs__link,
+.bs__link:visited {
+  color: var(--primary);
+}
+
+.bs__link:hover {
+  color: var(--primary-hovered);
+}
+
+form,
+fieldset {
+  max-width: 450px;
+  margin: 20px auto;
+  background: white;
+}
+
+legend {
+  margin-left: 10%;
+  border: 1px solid;
+  padding: 5px;
+}
+
+.bs__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bs__row {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.bs__column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bs__label {
+  margin-bottom: 3px;
+}
+
+.bs__column--inline {
+  display: flex;
+  flex-direction: row;
+}
+
+.bs__column--inline label {
+  margin-right: 10px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.bs__column--third {
+  margin-top: -20px;
+  width: 33%;
+}
+
+.bs__column--third label {
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 15px;
+  accent-color: var(--primary);
+}
+
+.bs__column--short {
+  margin-left: 10px;
+  width: 75%;
+}
+
+.bs__button {
+    padding: 10px;
+    background: var(--primary);
+    color: #ffffff;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+.bs__button:hover {
+    background: var(--primary-hovered);
+}
+
+.bs__main-list {
+    text-align: left;
+}
+
+.bs__gallery {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bs__gallery-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.bs__gallery-item:hover {
+    background-color:rgba(0, 0, 0, 0.2);
+}
+.bs__gallery-image {
+    width: 100%;
+}

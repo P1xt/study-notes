@@ -1,0 +1,63 @@
+/* Your code here */
+
+.pf {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.wgs {
+  height: 241px;
+  position: relative;
+  width: 320px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.wgs__mole-head {
+  left: 55px;
+  height: 178px;
+  position: absolute;
+  width: 188px;
+  transition: margin-top 0.25s ease-in;
+}
+
+.wgs__mole-head--hidden {
+  margin-top: 241px;
+}
+
+.wgs__mole-head--whacked {
+  background:rgba(0, 0, 0, 0.4);
+}
+
+.wgs__dirt-pile {
+  top: 131px;
+  height: 110px;
+  position: absolute;
+  width: 320x;
+}
+
+/* UNCOMMENT THE CODE BELOW WHEN DIRECTED */
+.sb {
+  background-color: cornflowerblue;
+  border-bottom: 1px solid #645DED;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  font-size: 30px;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+}
+
+.sb__mole-counter {
+  flex: 1 0 0;
+  text-align: right;
+}
+
+.sb__score-holder {
+  flex: 1 0 0;
+}
+
+.sb__game-over--hidden {
+  display: none;
+}
