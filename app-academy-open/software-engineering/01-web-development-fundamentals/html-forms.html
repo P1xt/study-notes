@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title><form action=" /form-handling-url" method="post">
+    <title>Document</title>
     <style>
         form,
         fieldset {
@@ -42,87 +42,87 @@
 </head>
 
 <body>
-    <fieldset>
-        <legend>Add user</legend>
+    <form action="/form-handling-url" method="post">
+        <fieldset>
+            <legend>Add user</legend>
 
-        <div class="container">
-            <div class="row">
-                <div class="column">
-                    <label for="firstName">First name</label>
-                    <input type="text" id="firstName" name="first_name">
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <label for="firstName">First name</label>
+                        <input type="text" id="firstName" name="first_name">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <label for="lastName">Last name</label>
-                    <input type="text" id="lastName" name="last_name">
+                <div class="row">
+                    <div class="column">
+                        <label for="lastName">Last name</label>
+                        <input type="text" id="lastName" name="last_name">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email_address">
+                <div class="row">
+                    <div class="column">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email_address">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="column column--long">
-                    <label for="role">Status</label>
-                    <select id="role" name="user_role_name">
-                        <option value="student">Student</option>
-                        <option value="instructor">Instructor</option>
-                        <option value="guest">Guest</option>
-                    </select>
+                <div class="row">
+                    <div class="column column--long">
+                        <label for="role">Status</label>
+                        <select id="role" name="user_role_name">
+                            <option value="student">Student</option>
+                            <option value="instructor">Instructor</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </div>
+                    <div class="column column--short">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
                 </div>
-                <div class="column column--short">
-                    <label for="date">Date</label>
-                    <input type="date" id="date" name="date">
+                <div class="row">
+                    <div class="column">
+                        <p>Choose your favorite Web language:</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <p>Choose your favorite Web language:</p>
+                <div class="row">
+                    <div class="column--inline column--third">
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">HTML</label>
+                    </div>
+                    <div class="column--inline column--third">
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">CSS</label>
+                    </div>
+                    <div class="column--inline column--third">
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="javascript">JavaScript</label>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="column--inline column--third">
-                    <input type="radio" id="html" name="fav_language" value="HTML">
-                    <label for="html">HTML</label>
+                <div class="row">
+                    <div class="column">
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
                 </div>
-                <div class="column--inline column--third">
-                    <input type="radio" id="css" name="fav_language" value="CSS">
-                    <label for="css">CSS</label>
-                </div>
-                <div class="column--inline column--third">
-                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                    <label for="javascript">JavaScript</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <label for="comments">Comments</label>
-                    <textarea id="comments" name="comments"></textarea>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="column--inline">
-                    <input type="checkbox" id="signup" name="signup" value="Signup">
-                    <label for="signup">Sign up for news letter</label>
+                <div class="row">
+                    <div class="column--inline">
+                        <input type="checkbox" id="signup" name="signup" value="Signup">
+                        <label for="signup">Sign up for news letter</label>
+                    </div>
+                    <div class="column--inline">
+                        <input type="checkbox" id="terms" name="terms" value="Terms">
+                        <label for="terms"> Agree to terms and conditions</label>
+                    </div>
                 </div>
-                <div class="column--inline">
-                    <input type="checkbox" id="terms" name="terms" value="Terms">
-                    <label for="terms"> Agree to terms and conditions</label>
+                <div class="row">
+                    <div class="column">
+                        <button type="submit">Submit</button>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="column">
-                    <button type="submit">Submit</button>
-                </div>
-            </div>
-        </div>
-    </fieldset>
+        </fieldset>
     </form>
-
 </body>
 
 </html>

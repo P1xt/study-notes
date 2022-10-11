@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic site</title>
+    <link rel="stylesheet" href="bs.css" />
+</head>
+
+<body>
+    <div class="bs">
+        <header class="bs__header">
+            <nav class="bs__nav">
+                <ul class="bs__nav-list">
+                    <li class="bs__nav-list-item">
+                        <a class="bs__nav-link" href="./page-1.html">Page 1</a>
+                    </li>
+                    <li class="bs__nav-list-item">
+                        <a class="bs__nav-link bs__nav-link--active" href="./page-2.html">Page 2</a>
+                    </li>
+                    <li class="bs__nav-list-item">
+                        <a class="bs__nav-link" href="./page-3.html">Page 3</a>
+                    </li>
+                    <li class="bs__nav-list-item">
+                        <a class="bs__nav-link" href="./page-4.html">Page 4</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="bs__main">
+            <h1 class="bs__main-header">Fuga, odit repellat recusandae</h1>
+        </main>
+        <section class="bs__section">
+            <form action="/form-handling-url" method="post">
+                <fieldset>
+                    <legend>Add user</legend>
+
+                    <div class="bs__container">
+                        <div class="bs__row">
+                            <div class="bs__column">
+                                <label for="firstName">First name</label>
+                                <input type="text" id="firstName" name="first_name">
+                            </div>
+                        </div>
+                        <div class="bs__row">
+                            <div class="bs__column">
+                                <label for="lastName">Last name</label>
+                                <input type="text" id="lastName" name="last_name">
+                            </div>
+                        </div>
+                        <div class="bs__row">
+                            <div class="bs__column">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email_address">
+                            </div>
+                        </div>
+                        <div class="bs__row">
+                            <div class="bs__column bs__column--long">
+                                <label for="role">Status</label>
+                                <select id="role" name="user_role_name">
+                                    <option value="student">Student</option>
+                                    <option value="instructor">Instructor</option>
+                                    <option value="guest">Guest</option>
+                                </select>
+                            </div>
+                            <div class="bs__column bs__column--short">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date">
+                            </div>
+                        </div>
+                        <div class="bs__row">
+                            <div class="bs__column">
+                                <p>Choose your favorite Web language:</p>
+                            </div>
+                        </div>
+                        <div class="bs__row">
+                            <div class="bs__column--inline bs__column--third">
+                                <input type="radio" id="html" name="fav_language" value="HTML">
+                                <label for="html">HTML</label>
+                            </div>
+                            <div class="bs__column--inline bs__column--third">
+                                <input type="radio" id="css" name="fav_language" value="CSS">
+                                <label for="css">CSS</label>
+                            </div>
+                            <div class="bs__column--inline bs__column--third">
+                                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                                <label for="javascript">JavaScript</label>
+                            </div>
+                        </div>
+                        <div class="bs__row">
+                            <div class="cbs__olumn">
+                                <label for="comments">Comments</label>
+                                <textarea id="comments" name="comments"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="bs__row">
+                            <div class="bs__column--inline">
+                                <input type="checkbox" id="signup" name="signup" value="Signup">
+                                <label for="signup">Sign up for news letter</label>
+                            </div>
+                            <div class="bs__column--inline">
+                                <input type="checkbox" id="terms" name="terms" value="Terms">
+                                <label for="terms"> Agree to terms and conditions</label>
+                            </div>
+                        </div>
+                        <div class="bs__row">
+                            <div class="bs__column">
+                                <button class="bs__button" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
